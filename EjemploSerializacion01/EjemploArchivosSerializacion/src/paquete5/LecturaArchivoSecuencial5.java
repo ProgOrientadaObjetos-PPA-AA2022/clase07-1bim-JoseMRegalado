@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package paquete5;
 
 import java.io.EOFException;
@@ -78,7 +75,7 @@ public class LecturaArchivoSecuencial5 {
                 try {
                     Hospital registro = (Hospital) entrada.readObject();
                     
-                    if(registro.obtenerNombre().equals(identificador)){
+                    if(registro.obtenerId().equals(identificador)){
                         hospitalBuscado = registro;
                         break;
                     }
@@ -118,14 +115,14 @@ public class LecturaArchivoSecuencial5 {
 
     @Override
     public String toString() {
-        String cadena = "Lista de Profesores\n";
+        String cadena = "Lista de Hospitales\n";
         for (int i = 0; i < obtenerHospitales().size(); i++) {
             Hospital h = obtenerHospitales().get(i);
-            cadena = String.format("%s(%d) %s-%d-%.2f\n", cadena,
+            cadena = String.format("%s(%d) %s-%d-%.2f - %s\n", cadena,
                     i + 1,
                     h.obtenerNombre(),
                     h.obtenerNumCamas(),
-                    h.obtenerPresupuesto());
+                    h.obtenerPresupuesto(),h.obtenerId());
         }
 
         return cadena;

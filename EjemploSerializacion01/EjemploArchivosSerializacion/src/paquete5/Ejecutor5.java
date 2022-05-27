@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package paquete5;
 
 /**
@@ -13,11 +10,11 @@ public class Ejecutor5 {
         String nombreArchivo = "data/hospitales.data";
         
         Hospital hospital1 = new Hospital("Clínica San Agustín", 
-                100, 250000);
+                100, 250000,"150");
         Hospital hospital2 = new Hospital("Hospital UTPL", 
-                150, 200000);
+                150, 200000,"151");
         Hospital hospital3 = new Hospital("Hospital del Seguro", 
-                200, 350000);
+                200, 350000,"152");
 
         EscrituraArchivoSecuencial5 archivo = 
                 new EscrituraArchivoSecuencial5(nombreArchivo);
