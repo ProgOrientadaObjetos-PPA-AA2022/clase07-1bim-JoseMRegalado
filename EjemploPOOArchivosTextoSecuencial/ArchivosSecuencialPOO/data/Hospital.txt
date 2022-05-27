@@ -1,0 +1,6 @@
+Hospital del seguro;200;250000,00
+Clínica San Agustín;450;130000,50
+Clínica San Pablo;150;100000,00
+Hospital del seguro;200;150000,00
+Clínica San Agustín;450;130000,50
+Clínica San Pablo;150;100000,00
